@@ -1,0 +1,112 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+html {font-size: 16em;
+}
+
+.block-main-menu{
+    display: block;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    background-image: url("/sites/all/themes/missnepal/images/home.jpg");
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+
+#node-page-6 ..pageant_body{
+    margin-left: 30%;
+}
+.section-footer{
+    width: 25%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* main menu*/
+
+.menu{  
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 2.3em;
+  text-align: right;
+  width:25vw;
+    
+}
+
+ul.menu{
+  padding-top: 10%;
+}
+
+ul.menu a {
+	text-decoration: none;
+	color: black;
+    max-width: 100%;
+    display: inline-block;
+}
+
+ul.menu li {
+	list-style: none !important;
+	text-align: right;    
+}
+
+/* selected link */
+
+/* mouse over link */
+ul.menu a:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 1%;
+  z-index: 999;
+  width: 100%;
+}
+
+/*main menu end*/
+
+/*home*/
+
+
+/*Sponsor*/
+
+
+/*
+}
+.square-box:hover{
+	border:1px solid #999;
+
+	/* CSS3 inset shadow: 
+	-moz-box-shadow:0 0 30px #999 inset;
+	-webkit-box-shadow:0 0 30px #999 inset;
+	box-shadow:0 0 30px #999 inset;
+}
+
+.square-content <img{
+  max-width:40%;
+  max-height: 40%;
+  vertical-align: middle;
+}
+
+
+/*Enter form*/
+
+
+.last_name {
+	display: inline-block;
+	float: left;
+	margin: 1em;
+}
+
+#node-webform-13{
+    margin-left:28%;
+    width: 100%;
+}
+
+/*footer*/
+
+.rteright p{
+    
+    bottom: 0;
+    left: 0;
+}

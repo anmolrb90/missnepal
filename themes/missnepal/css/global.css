@@ -1,0 +1,168 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import url(https://fonts.googleapis.com/cssfamily=Lato:400,300);
+
+html {
+    font-size: 100%;
+    margin: 0;
+}
+#node-page-6{
+    margin-left: 1%;
+}
+
+ /*Navigation Mobile*/
+
+.mean-bar <div>{
+    background-color:#e6e6e6; 
+}
+
+.mean-container .mean-nav ul li a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #ed1e79;
+    background-color:#eeeeee;
+}
+
+
+.mean-container .mean-bar {
+    background-color: #f2f2f2;   
+}
+
+.mean-container a.meanmenu-reveal span{
+    background-color: #ed1e79;}
+
+.mean-container a.meanmenu-reveal{
+    color: #ed1e79;}
+
+
+
+
+/*Home */
+#grid{
+        margin: 0 auto,
+}
+
+#grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.grid-sizer, .grid-item {
+  width: 80%;
+    float: left;
+}
+
+
+div.grid-item img{
+    display: block;
+    width: 80%;
+    float: left;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+
+.grid-sizer{
+    width:60%;
+    
+}
+
+
+
+
+/*Pageant */
+.pageant_body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: justify; 
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+    font-size: 1.2em;
+    display:block;
+    margin-left: 4%;
+} 
+
+.pageant_body h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.pageant_body h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.7em;
+}
+
+.pageant_body span{
+    font-size: 1.7em;
+}
+/* end*/
+
+.square {
+  position: relative;
+  background-color: aqua;
+  width: 30%;
+    
+}
+
+.square:after {
+  content: "";
+  display: block;
+    max-width: 30%;
+  padding-bottom: 100%;
+}
+
+.sponsor_logo img{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+ margin: auto;
+    z-index: 1;
+
+}
+
+
+/* Enter -"Web Form"*/
+.form-item{
+    font-family: 'Lato', sans-serif;
+}
+.form-item h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;}
+    
+.form-item p{text-align: justify; 
+    -moz-text-align-last: left; /* Code     for Firefox */
+    text-align-last: left;}
+
+#node-webform-13{
+    width: 100%;
+}
+
+
+
+
+/* end*/
+
+.logo-img{
+ 	display :none;
+ }
+
+.block-title{display :none;
+}
+
+.submitted{
+    display :none;
+}
+.title{
+    display: none;
+}
+
+
+
+
