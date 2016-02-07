@@ -1,8 +1,17 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
-html {font-size: 16em;
+html {
+  font-size: 16em;
 }
 
-.block-main-menu{
+#region-content {
+	margin-left:25%;
+	width:75%;
+	padding:10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+#region-sidebar-first {
     display: block;
     width: 25%;
     height: 100%;
@@ -14,9 +23,6 @@ html {font-size: 16em;
 }
 
 
-#node-page-6 ..pageant_body{
-    margin-left: 30%;
-}
 .section-footer{
     width: 25%;
     position: fixed;
@@ -32,8 +38,6 @@ html {font-size: 16em;
   font-weight: 300;
   font-size: 2.3em;
   text-align: right;
-  width:25vw;
-    
 }
 
 ul.menu{
@@ -99,14 +103,37 @@ ul.menu a:hover {
 }
 
 #node-webform-13{
-    margin-left:28%;
     width: 100%;
 }
 
 /*footer*/
 
 .rteright p{
-    
     bottom: 0;
     left: 0;
 }
+
+/** Homepage **/
+.view-featured-images {
+	width:100%;
+}
+.view-featured-images ul {
+	display:block;
+	clear:both;
+	width:100%;
+}
+.view-featured-images ul,
+.view-featured-images ul li {
+	margin:0;
+	padding:0;
+}
+.view-featured-images ul li {
+	width:220px;
+	display:block;
+	margin-bottom:10px;
+}
+.view-featured-images ul li img {
+	width:100%;
+	display:block;
+}
+

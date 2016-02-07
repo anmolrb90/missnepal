@@ -1,13 +1,10 @@
 (function($){
     $(document).ready(function() {
-       $("#grid").masonry({
-           itemSelector: '.grid-item',
-           columnWidth: '.grid-sizer',
-           gutter: '.gutter-sizer',
-           percentPosition: true,
-           fitWidth: true,
-           originLeft: true,
-           originTop: true
+       $(".view-featured-images .item-list ul").masonry({
+			itemSelector: ".view-featured-images .item-list ul li",
+			columnWidth: 220,
+		 	gutter: 10,
+		 	percentPosition: true
        });
     });
 })(jQuery);
