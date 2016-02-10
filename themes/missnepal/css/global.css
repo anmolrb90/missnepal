@@ -1,15 +1,19 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-@import url(https://fonts.googleapis.com/cssfamily=Lato:400,300);
+@import url(https://fonts.googleapis.com/cssfamily=Lato:400,300,200);
+
 
 html {
-    font-size: 100%;
     margin: 0;
 }
 #node-page-6{
     margin-left: 1%;
 }
 
+#region-sidebar-first{
+    margin-left: 0;
+    
+}
  /*Navigation Mobile*/
 
 .mean-bar <div>{
@@ -19,27 +23,33 @@ html {
 .mean-container .mean-nav ul li a{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #ed1e79;
+    color: #000;
     background-color:#eeeeee;
+    text-transform: lowercase;
+
 }
 
+.mean-container .mean-nav ul li:hover{
+    background-color: #fff;
+}
 
 .mean-container .mean-bar {
     background-color: #f2f2f2;   
 }
 
 .mean-container a.meanmenu-reveal span{
-    background-color: #ed1e79;}
+    background-color: #000;}
 
 .mean-container a.meanmenu-reveal{
-    color: #ed1e79;}
+    color: #000;}
 
 
 
 
 /*Home */
 #grid{
-        margin: 0 auto,
+    margin: 0 auto;
+    margin-left: 0;
 }
 
 #grid:after {
@@ -63,7 +73,6 @@ div.grid-item img{
     margin-left: 2%;
 }
 
-
 .grid-sizer{
     width:60%;
     
@@ -79,10 +88,8 @@ div.grid-item img{
     text-align: justify; 
     -moz-text-align-last: left; /* Code for Firefox */
     text-align-last: left;
-    font-size: 1.2em;
-    display:block;
-    margin-left: 4%;
-} 
+    font-size: 1.8vmin;
+    display:block;} 
 
 .pageant_body h3{
     font-family: 'Lato', sans-serif;
@@ -101,51 +108,59 @@ div.grid-item img{
 }
 /* end*/
 
-.square {
-  position: relative;
-  background-color: aqua;
-  width: 30%;
-    
+/*Sponsor*/
+ul.square li{ 
+list-style:none;
+height:25vmin;
+width:25vmin;
+border: .2vmin solid;
+float:left;
+position:relative;
 }
 
-.square:after {
-  content: "";
+ul.square img {
+  margin: auto;
   display: block;
-    max-width: 30%;
-  padding-bottom: 100%;
+  width:50%;
+  position:absolute;
+  top: 0; bottom: 0; left: 0; right: 0;  
+ 
 }
 
-.sponsor_logo img{
-    
+ul.square li:hover{
+ -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+
+
+
+ /*form*/
+
+
+
+
+
+#webform-client-form-13{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    text-decoration: none;    
+}
+
+.footer_mn_1{
     display: block;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: auto;
- margin: auto;
-    z-index: 1;
-
-}
-
-
-/* Enter -"Web Form"*/
-.form-item{
-    font-family: 'Lato', sans-serif;
-}
-.form-item h2{
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;}
-    
-.form-item p{text-align: justify; 
-    -moz-text-align-last: left; /* Code     for Firefox */
-    text-align-last: left;}
-
-#node-webform-13{
+    text-align: right;
+    margin-left: 27%;
+    padding-top: 2%; 
     width: 100%;
 }
 
-
-
+hr{
+    border: 0;
+    width: 80%;
+    display: block;}
 
 /* end*/
 

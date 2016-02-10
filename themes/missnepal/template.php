@@ -19,4 +19,7 @@ function missnepal_preprocess_page(&$vars) {
     
     //Include css files
     drupal_add_css(path_to_theme() . '/css/miss-nepal-alpha-default.css');
+
+//responsive text
+drupal_add_js ('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'external');
 }

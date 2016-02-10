@@ -1,8 +1,7 @@
-/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
-html {
-  font-size: 16em;
-}
-
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the 
+*/
+@import url(https://fonts.googleapis.com/cssfamily=Lato:400,300,200);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 #region-content {
 	margin-left:25%;
 	width:75%;
@@ -12,16 +11,19 @@ html {
 	-webkit-box-sizing:border-box;
 }
 #region-sidebar-first {
-    display: block;
     width: 25%;
     height: 100%;
     position: fixed;
-    background-image: url("/sites/all/themes/missnepal/images/home.jpg");
+    background-color: #000000;
     z-index: 1;
     left: 0;
     top: 0;
 }
-
+@media (min-width:480px){
+    #region-sidebar-first:{
+        display: none;
+    }
+}
 
 .section-footer{
     width: 25%;
@@ -34,14 +36,14 @@ html {
 .menu{  
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 2.3em;
+  font-weight: 200;
+  font-size: 2.3vw;
   text-align: right;
+
 }
 
 ul.menu{
-  padding-top: 10%;
+  padding-top: 30%;
 }
 
 ul.menu a {
@@ -49,6 +51,8 @@ ul.menu a {
 	color: black;
     max-width: 100%;
     display: inline-block;
+    color: #ffffff;  
+
 }
 
 ul.menu li {
@@ -60,57 +64,116 @@ ul.menu li {
 
 /* mouse over link */
 ul.menu a:hover {
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding-left: 1%;
+border-bottom:.5px solid #fff;
+padding-left: 1%;
   z-index: 999;
   width: 100%;
 }
 
 /*main menu end*/
 
-/*home*/
-
 
 /*Sponsor*/
 
 
-/*
+/* Enter -"Form"*/
+#parent_form{
+    position: relative
 }
-.square-box:hover{
-	border:1px solid #999;
-
-	/* CSS3 inset shadow: 
-	-moz-box-shadow:0 0 30px #999 inset;
-	-webkit-box-shadow:0 0 30px #999 inset;
-	box-shadow:0 0 30px #999 inset;
+.rtecenter{
+    text-align: left;    
 }
 
-.square-content <img{
-  max-width:40%;
-  max-height: 40%;
-  vertical-align: middle;
+.rtecenter a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    color:#000;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 4vmin;       
+}
+
+.rtecenter a:hover{
+    color: lightgrey;
+}
+
+.rtecenter_1{ 
+    float:left;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 6vmin;
+    align-items: center
+}
+
+div.rtcenter_2 {
+border: 5px solid;
+float: left;
+width: 100%;
+border-color: red;
+}
+.internal_form{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    color: #ed1e79;
 }
 
 
+/* Enter -" Form"*/
+
+.form-item{
+    font-family: 'Lato', sans-serif;
+}
+.form-item h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;}
+    
+.form-item p{text-align: justify; 
+    -moz-text-align-last: left; /* Code     for Firefox */
+    text-align-last: left;
+}
+
+#edit-submitted-first-name
+{
+    border: none;
+    border-bottom: 1px solid;
+    
+}
 /*Enter form*/
 
-
-.last_name {
+.form_item_1{
+    display: inline-block;
+    width: 30%;
+    float: left;
+    padding-right:15%;
+    border: none;
+    
+    
+}
+.form_item_2 {
 	display: inline-block;
 	float: left;
-	margin: 1em;
+    clear: right !important;
 }
 
-#node-webform-13{
-    width: 100%;
+.form_item_3 {
+    display: inline-block;
+    float: left;
 }
 
 /*footer*/
-
+.zone-footer{
+    margin-right: 75%
+}
 .rteright p{
     bottom: 0;
     left: 0;
+}
+.logo_mw img{
+    width: 3%;
+    height: auto;
+    padding-bottom: 2%;
+    
 }
 
 /** Homepage **/
