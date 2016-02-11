@@ -1,15 +1,18 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the 
 */
-@import url(https://fonts.googleapis.com/cssfamily=Lato:400,300,200);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
 #region-content {
 	margin-left:25%;
 	width:75%;
-	padding:10px;
+	padding:5px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
+
+
 #region-sidebar-first {
     width: 25%;
     height: 100%;
@@ -36,14 +39,14 @@
 .menu{  
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 2.3vw;
   text-align: right;
 
 }
 
 ul.menu{
-  padding-top: 30%;
+  padding-top: 25%;
 }
 
 ul.menu a {
@@ -81,12 +84,13 @@ padding-left: 1%;
     position: relative
 }
 .rtecenter{
-    text-align: left;    
+    text-align: left;   
+     text-decoration: none;
 }
 
 .rtecenter a{
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     color:#000;
     display: inline-block;
     text-decoration: none;
