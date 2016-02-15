@@ -1,8 +1,6 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the 
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker|Lato);
 #region-content {
 	margin-left:25%;
 	width:75%;
@@ -137,14 +135,25 @@ border-color: red;
     text-align-last: left;
 }
 
-#edit-submitted-first-name
-{
-    border: none;
-    border-bottom: 1px solid;
+input[type="text"]
+{   border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.8em;
+    min-width: 300px;
+    padding: 6px 12px;
     
 }
 /*Enter form*/
-
+.form-item label,
+.form-actions label{
+    display: block;
+     font-family: 'Lato', sans-serif;  
+    font-weight: 400;
+    font-weight: bold;
+}
+}
 .form_item_1{
     display: inline-block;
     width: 30%;
@@ -172,12 +181,21 @@ border-color: red;
 .rteright p{
     bottom: 0;
     left: 0;
+    color: white;
+    
 }
 .logo_mw img{
     width: 3%;
     height: auto;
-    padding-bottom: 2%;
-    
+    padding-bottom: 2%;  
+}
+
+.footer_nepal{
+    box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+    bottom: 0;
+        left:0;
 }
 
 /** Homepage **/
