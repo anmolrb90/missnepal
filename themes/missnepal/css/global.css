@@ -1,8 +1,10 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker|Lato);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
 html {
+    background-color: #fafafa;
     margin: 0;
 }
 #node-page-6{
@@ -170,6 +172,7 @@ hr{
     height: .6vmin;
     color: black;
     padding-left: 30%;
+    margin-top: 3%;
     margin-left: 90%;
     width: 80%;
     display: block;
@@ -194,6 +197,10 @@ hr{
     display: none;
 }
 
+.breadcrumb{
+        display: none;
+
+}
 
 
 
