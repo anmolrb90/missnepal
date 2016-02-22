@@ -1,11 +1,19 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the 
 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker|Lato);
+
+
+body.front #region-content {
+    background-color:#000;
+    width: 100%;
+    margin-left: 10%;
+}
+
 #region-content {
 	margin-left:25%;
 	width:75%;
 	padding:4% 0 0 1%;
-    	box-sizing:border-box;
+    box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
@@ -15,12 +23,13 @@
     width: 25%;
     height: 100%;
     position: fixed;
-    background-color: #000000;
+    background-color: #fbcb00;
     z-index: 1;
     left: 0;
     top: 0;
 }
-
+@media screen and (min-width: 740px) {
+}
 @media screen and (min-width: 0px) and (max-width: 740px) {
 #region-sidebar-first { display: none; 
     }
@@ -28,7 +37,9 @@
     
     #region-content {
 	width:100%;
-	padding:2px;
+	padding:3%;
+        
+        margin:0;
     display: block;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -40,25 +51,34 @@
 /* main menu*/
 
 .menu{  
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 2.5em;
-  text-align: right;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    text-align: right;
 
 }
 
 ul.menu{
-  padding-top: 100px;
+    padding-top: 100px;
 }
 
-ul.menu a {
-	text-decoration: none;
+ul.menu a:link {
+    text-decoration: none;
 	color: black;
     max-width: 100%;
-    display: inline-block;
-    color: #ffffff;  
+    display: block;
+    color: #000000;  
+}
 
+/* visited link */
+ul.menu a:visited {
+    color:#000;
+}
+
+/* selected link */
+ul.menu a:active{
+    color:#fff;
 }
 
 ul.menu li {
@@ -66,19 +86,67 @@ ul.menu li {
 	text-align: right;    
 }
 
-/* selected link */
-
-/* mouse over link */
 ul.menu a:hover {
-border-bottom:.5px solid #fff;
-padding-left: 1%;
-  z-index: 999;
-  width: 100%;
+    border-bottom:.5px solid #000;
+    padding-left: 1%;
+    z-index: 99;
+    width: 100%;
+    height: auto;
 }
 
+.header_mn_1{
+    padding-top: 4%;
+    display: block;
+    width: 100%;
+    
+}
+
+.header_missnepal{
+    padding-left: 80%;
+    display: block;
+}
+
+hr{
+    height: .6vmin;
+    color: black;
+    padding-left: 30%;
+    margin-top: 3%;
+    margin-left: 90%;
+    width: 80%;
+    display: block;
+    background-color: #000;
+}
+/* mouse over link */
+
 /*main menu end*/
+div.home_mn{
+    background-color: black;
+    width: 1200px;
+    height: 1200px;
+    overflow: hidden;
+    position: fixed;
+    margin-left: 0;
+   margin-right: 10%;
+    
+    
+}
 
-
+div.home_mn1 p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    display: block;
+    color:wheat;
+    opacity: 75;
+    padding: 7% 2% 7% 0%;
+    width: 5% auto;
+    border: 5px solid;
+    border-left: none;
+    margin-top: 30%;
+    text-align: left;
+    left: 0;
+    font-size: 5em;
+    
+}
 /*Sponsor*/
 
 
@@ -138,9 +206,9 @@ div.form_item_1{
     padding-top:3%;
 }
 div.form_item_2{
-display: inline-block;
-float: right;
-margin: 0;
+    display: inline-block;
+    float: right;
+    margin: 0;
     
 }
 
@@ -253,23 +321,72 @@ input.webform-submit.button-primary.form-submit{
 }
 
 /*footer*/
-.zone-footer{
-    margin-right: 75%
-}
 
-.logo_mw img{
-    width: 3%;
-    height: auto;
-    padding-bottom: 2%;  
-}
 
-.footer_nepal{
-    box-sizing:border-box;
+
+
+@media screen and (min-width: 740px) {
+    
+div.logo_mw{
+    display: none;
+}
+    
+.rteright {
+    z-index: 4;
+    position: fixed;
+    margin-left:7%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+     box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-    bottom: 0;
-        left:0;
+    
 }
+    
+div.logo_mww img{
+    padding-left: 87%;
+    margin-bottom:2%;
+    display: block;
+    max-width: 13%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 740px) {
+
+div.logo_mww img{
+    display: none;}
+
+div.logo_mw img{
+    display: none;
+   /*  
+    height: auto;
+    padding-bottom: 2%;
+    max-width: 15%;*/  
+}
+    .rteright {
+        display: none;
+           /*  
+    z-index: 3;
+    position: absolute;
+    margin-left:7%;
+    bottom: 0;
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -4em;
+    color: #000;
+    display: inline-block;
+     box-sizing:border-box;
+	-moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    */
+    }
+
+
+}
+
 
 /** Homepage **/
 .view-featured-images {
