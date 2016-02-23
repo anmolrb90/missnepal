@@ -46,7 +46,6 @@ html {
 
 
 
-
 /*Home */
 
 #grid{
@@ -106,32 +105,42 @@ div.grid-item img{
 .pageant_body span{
     font-size: 1.7em;
 }
+.pageant_img{
+    display: inline-block;
+    padding: 0 1% 0 1%;
+}
+.pageant_img p{
+    margin-bottom: 9%;
+}
+
+
 /* end*/
 
 /*Sponsor*/
 .square li{
 	 margin: .5% ;
-    box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
+    
 }
 
 ul.square li{ 
-list-style:none;
-height:20vmin;
-width:20vmin;
-border: .1vmin ;
-float:left;
-position:relative;
-background-color:white;
+    list-style:none;
+    height:20vmin;
+    width:20vmin;
+    border: .1vmin ;
+    float:left;
+    position:relative;
+    background-color:white;
 }
 
 ul.square img {
-  margin: auto;
-  display: block;
-  width:70%;
-  position:absolute;
-  top: 0; bottom: 0; left: 0; right: 0;  
+    margin: auto;
+    display: block;
+    width:70%;
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 
 }
 
@@ -158,8 +167,9 @@ ul.square li:hover{
 .field-name-field-featured,
 .title,
 .submitted,
-.block-title{
-        display: none;
+.block-title,
+.field-label{
+    display: none;
 }
 
 

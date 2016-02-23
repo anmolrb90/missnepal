@@ -10,5 +10,12 @@
 		 	percentPosition: true
        });
     });
+    $settings = array('mediaelement' => array(
+  '.class-name' => array(
+    'controls' => TRUE,
+    'opts' => array(), // This is the mediaelement scripts options.
+  )
+));
+drupal_add_js($settings, 'setting');
 })(jQuery);
 
