@@ -15,7 +15,7 @@ function missnepal_preprocess_page(&$vars) {
     //Include scripts.js and masonry js
     drupal_add_js(path_to_theme() . '/js/script.js');
     
-    drupal_add_js('https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js', 'external');
+    drupal_add_js('https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.js', 'external');
     
     //Include css files
     drupal_add_css(path_to_theme() . '/css/miss-nepal-alpha-default.css');
